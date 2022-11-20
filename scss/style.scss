@@ -1,0 +1,431 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$regular: #131313;
+$grey: #6F6F6F;
+$red: #FF4040;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    
+}
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 97px;
+}
+.header-logo {
+}
+.header-logo__img {
+}
+.navigation {
+
+}
+.header-menu {
+    display: flex;
+}
+.header-menu__item {
+    margin-right: 10px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.header-menu__link {
+    text-transform: uppercase;
+    padding: 42px 20px;
+    color: $regular;
+    transition: all .3s;
+    &:hover {
+        background-color: $regular;
+        color: #fff;
+    }
+}
+
+
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header-about {
+    padding-top: 70px;
+}
+.header-about__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: $regular;
+    margin-bottom: 5px;
+}
+.header-about__subtitle {
+    font-size: 32px;
+    line-height: 39px;
+    color: $grey;
+    margin-bottom: 60px;
+}
+.header-about__content {
+    margin-bottom: 80px;
+    color: $regular;
+    font-size: 14px;
+    line-height: 120%;
+    width: 420px;
+}
+.header-about__content_item {
+    margin-bottom: 20px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.header-btn {
+    background-color: $regular;
+    padding: 28px 61px 28px 81px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+        background-color: $red;
+        transition: all .3s;
+    }
+}
+
+.header-bikes {
+    margin-left: 30px;
+    max-width: 630px;
+}
+.header-slider {
+    margin-bottom: 25px;
+}
+.header-slider__item {
+}
+.bikes-list {
+    color: $regular;
+    display: flex;
+    justify-content: space-around;
+}
+.bikes-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: lowercase;
+        margin-top: 5px;
+    }
+}
+
+
+
+.header-slider .slick-dots {
+    right: 0;
+    top: 52px;
+}
+
+.slick-dots {
+    position: absolute;
+}
+
+.slick-dots li + li {
+    padding-top: 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    background-color: $regular;
+    width: 2px;
+    height: 25px;
+}
+.slick-dots .slick-active button {
+    background-color: $red;
+}
+
+
+.main {
+    margin-top: 150px;
+}
+.info {
+    display: flex;
+    margin-bottom: 150px;
+}
+.info-img {
+    margin-right: 60px;
+    object-fit: cover;
+}
+.info-img__item {
+}
+.info-about {
+}
+.info-about__item {
+    margin-bottom: 50px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.info-about__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $regular;
+}
+.info-about__content {
+    max-width: 450px;
+    line-height: 120%;
+    color: $regular;
+}
+
+
+.characteristics {
+    display: flex;
+    margin-bottom: 150px;
+}
+.characteristics__about {
+    max-width: 570px;
+}
+.characteristics__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $regular;
+}
+.characteristics__items {
+    min-width: 570px;
+}
+.characteristics__list {
+    padding-top: 30px;
+}
+.characteristics__title-list {
+    padding: 2px 0 3px 1px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+    background-color: #131313;
+    margin-bottom: 10px;
+}
+.characteristics__line {
+    display: flex;
+    line-height: 120%;
+    color: $regular;
+    margin-bottom: 5px;
+}
+.characteristics__name {
+    flex-basis: 285px;
+    padding-right: 25px;
+}
+.characteristics__desc {
+    flex-basis: 285px;
+}
+.characteristics__img {
+    align-self: center;
+    object-fit: cover;
+    margin-left: 60px;
+}
+.characteristics__img-item {
+}
+
+.slider {
+    margin-bottom: 50px;
+}
+.slider__img {
+    padding-left: 48px;
+}
+
+.slider__items .slick-dots {
+    left: 0;
+    top: 0;
+}
+
+
+.price {
+    margin-bottom: 100px;
+}
+.price__content {
+    position: relative;
+}
+.form {
+    max-width: 420px;
+}
+.form__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: $regular;
+}
+.form__text {
+    line-height: 120%;
+    color: $regular;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.form__input-name,
+.form__input-phone {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $regular;
+    margin-bottom: 20px;
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder {
+    color: $grey;
+    opacity: 0.5;
+}
+.form____input-text {
+    color: $grey;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+.form__label-box {
+    display: flex;
+    margin-bottom: 50px;
+}
+.form__label {
+    margin-right: 23px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.form__input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.form__input-radio:checked + .form__bike {
+    display: block;
+}
+.form__bike {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.form__bike-img {
+}
+.form__bike-price {
+    font-size: 32px;
+    color: $regular;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 30px;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $red;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.form__bike-price::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border: 1px solid $red;
+    border-radius: 50%;
+    top: 12px;
+    left: 0;
+}
+
+.form__radio-style {
+    border-radius: 30px;
+    width: 80px;
+    height: 12px;
+}
+.form__radio-style--grey {
+    background: $grey;
+}
+.form__radio-style--white {
+    border: 1px solid $grey;
+}
+.form__radio-style--red {
+    background: $red;
+}
+.form__btn {
+    background-color: $regular;
+    padding: 28px 61px 28px 81px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+        background-color: $red;
+        transition: all .3s;
+    }
+}
+
+
+
+.footer {
+    background-color: $regular;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0;
+}
+.confident {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+.confident__link {
+    color: #fff;
+}
+.socials {
+}
+.socials__link {
+    margin-right: 24px;
+    &:last-child {
+        margin: 0;
+    }
+}
+.socials__item {
+    
+}
+.contacts {
+}
+.contacts__phone {
+    margin: 0 0 10px;
+}
+.contacts__link {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+.contacts__link span {
+    display: inline-block;
+    padding-top: 4px;
+}
+.contacts__img {
+    margin: 0 10px 0 0;
+}
+.contacts__email {
+}
